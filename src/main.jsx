@@ -4,6 +4,7 @@ import App from './App'
 import { ServiceWorkerManager } from './services/ServiceWorkerManager'
 
 // Register service worker for offline functionality
-ServiceWorkerManager.register()
+const swManager = new ServiceWorkerManager()
+swManager.register()
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)
